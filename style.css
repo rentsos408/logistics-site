@@ -102,3 +102,19 @@ footer {
         margin: 10px 0;
     }
 }
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #cc5500;
+}
