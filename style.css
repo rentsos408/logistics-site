@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
+    color: #f8f9fa; /* Off-white for better readability */
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -71,7 +71,7 @@ nav a:hover {
 section {
     margin: 20px 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -86,7 +86,7 @@ footer {
 }
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Make text blocks flexible */
+        width: 95%; /* Increase width to better fit small screens */
     }
 
     h1 {
@@ -101,4 +101,44 @@ footer {
         display: block; /* Stack menu items */
         margin: 10px 0;
     }
+
+    .cta-button {
+        width: 100%; /* Make button full-width on mobile */
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #cc5500;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, p, nav, section {
+    animation: fadeIn 1.5s ease-in-out;
 }
