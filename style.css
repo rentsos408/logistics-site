@@ -73,3 +73,21 @@ footer {
     margin-top: 20px;
     border-radius: 10px;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make text blocks flexible */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce heading size */
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav li {
+        display: block; /* Stack menu items */
+        margin: 10px 0;
+    }
+}
