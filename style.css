@@ -3,27 +3,32 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://raw.githubusercontent.com/rentsos408/logistics-site/main/home.png') no-repeat center center fixed;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
 /* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 h1 {
     color: #007bff;
     font-size: 2.5em;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 1.2em;
-    color: #666;
+    margin: 10px 0;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.8);
     padding: 10px;
+    border-radius: 10px;
 }
 
 nav a {
@@ -31,20 +36,41 @@ nav a {
     text-decoration: none;
     margin: 10px;
     font-size: 1.2em;
+    padding: 10px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
 }
 
 /* Container */
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    color: #333;
 }
 
+/* Sections */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
 
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
