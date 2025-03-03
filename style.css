@@ -35,6 +35,9 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the nav menu */
+    gap: 20px; /* Adds spacing between links */
 }
 
 nav li {
