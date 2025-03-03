@@ -26,9 +26,14 @@ h1 {
 
 /* Navigation Bar */
 nav {
-    background: rgba(0, 0, 0, 0.4); /* Dark transparent background */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    position: fixed; /* Keep menu at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
     padding: 10px;
     text-align: center;
+    z-index: 1000; /* Keeps it above other content */
 }
 
 nav ul {
@@ -36,14 +41,12 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers the nav menu */
-    align-items: center; /* Ensures vertical alignment */
-    gap: 20px; /* Adds spacing between links */
+    justify-content: center; /* Centers the menu items */
+    gap: 20px; /* Adds spacing */
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 15px;
+   display: inline-block;
 }
 
 nav a {
@@ -152,4 +155,7 @@ footer {
 
 h1, p, nav, section {
     animation: fadeIn 1.5s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
 }
