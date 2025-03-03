@@ -37,6 +37,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Centers the nav menu */
+    align-items: center; /* Ensures vertical alignment */
     gap: 20px; /* Adds spacing between links */
 }
 
@@ -62,7 +63,7 @@ nav a:hover {
 
 /* Container */
 .container {
-    background: rgba(255, 255, 255, 0.4); /* White background with slight transparency */
+    background: rgba(255, 255, 255, 0.5); /* White background with slight transparency */
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
     margin: 20px auto; /* Center alignment */
@@ -74,7 +75,7 @@ nav a:hover {
 section {
     margin: 20px 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -95,21 +96,26 @@ footer {
     h1 {
         font-size: 24px; /* Reduce heading size */
     }
+    
+    p {
+        font-size: 16px; /* Adjust paragraph size for readability */
+    }
 
     nav ul {
-        padding: 10px;
+        flex-direction: column; /* Stack menu items */
+        gap: 10px; /* Add spacing */
     }
 
     nav li {
-        display: block; /* Stack menu items */
-        margin: 10px 0;
+        display: block;
+        margin: 5px 0;
     }
 
     .cta-button {
-        width: 100%; /* Make button full-width on mobile */
+        width: 90%; /* Make button full-width on mobile */
         text-align: center;
         display: block;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 }
 
@@ -125,6 +131,7 @@ footer {
     font-weight: bold;
     transition: background 0.3s ease-in-out, transform 0.2s;
     margin-top: 20px; /* Adds space above the button */
+    margin-bottom: 20px; /* Adds space below the button */
 }
 
 
