@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #e0e0e0; /* Softer off-white for better readability */
+    color: #d9d9d9; /* Softer off-white for better readability */
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    color: #007bff; /* Change to blue */
+    color: #f0f0f0; /* Change to blue */
     font-size: 2.5em;
     margin: 10px 0;
     font-weight: bold;
