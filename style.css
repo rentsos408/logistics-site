@@ -66,7 +66,7 @@ nav a:hover {
 
 /* Container */
 .container {
-    background: rgba(255, 255, 255, 0.5); /* White background with slight transparency */
+    background: rgba(255, 255, 255, 0.6); /* White background with slight transparency */
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
     margin: 20px auto; /* Center alignment */
@@ -77,8 +77,8 @@ nav a:hover {
 /* Sections */
 section {
     margin: 60px 0; /* More spacing so sections are not hidden under the nav */
-    padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styling */
