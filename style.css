@@ -160,3 +160,6 @@ h1, p, nav, section {
 html {
     scroll-behavior: smooth;
 }
+.blue-heading {
+    color: #007bff !important; /* Blue only for 'Need More Info?' */
+}
