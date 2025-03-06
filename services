@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | RENTOS408</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+        <p>Helping businesses and individuals navigate global logistics, procurement, and relocation.</p>
+    </header>
+
+    <section class="service">
+        <h2>Procurement & Sourcing</h2>
+        <p>We source medical equipment, personal items, and household goods, working directly with trusted suppliers.</p>
+    </section>
+
+    <section class="service">
+        <h2>Consolidation & Warehousing</h2>
+        <p>We help coordinate goods from multiple suppliers, secure warehousing, and manage inventory for optimized shipments.</p>
+    </section>
+
+    <section class="service">
+        <h2>Shipping & Logistics Coordination</h2>
+        <p>We arrange shipping with carriers like Maersk, compare rates, and assist with container bookings and export documentation.</p>
+    </section>
+
+    <section class="service">
+        <h2>Relocation & Business Support</h2>
+        <p>We guide individuals and businesses moving internationally, helping them set up and comply with trade regulations.</p>
+    </section>
+
+    <section class="service">
+        <h2>Multilingual Support</h2>
+        <p>We offer services in English, Spanish, Italian, and French to help clients with global procurement and logistics.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RENTOS408. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
