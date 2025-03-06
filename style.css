@@ -18,6 +18,15 @@ header {
     border-radius: 10px;
 }
 
+.service {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 h1 {
     color: #007bff; /* Blue color for "Welcome to RENTSOS408" */
     font-size: 2.5em;
