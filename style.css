@@ -92,6 +92,11 @@ section {
     background: rgba(0, 0, 0, 0.1);
 }
 
+.section-content {
+    max-width: 70%;
+    margin: auto; /* Centers the text block */
+}
+
 /* Footer Styling */
 footer {
     background: rgba(0, 0, 0, 0.7);
