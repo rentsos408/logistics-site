@@ -4,7 +4,7 @@ body {
     background: url('https://raw.githubusercontent.com/rentsos408/logistics-site/main/home4.webp') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Fix for mobile */
     color: #000000; /* Softer off-white for better readability */
     text-align: center;
     padding: 20px;
@@ -89,7 +89,7 @@ nav a:hover {
 section {
     margin: 60px 0; /* More spacing so sections are not hidden under the nav */
     padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Footer Styling */
@@ -115,8 +115,9 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Stack menu items */
-        gap: 10px; /* Add spacing */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Add spacing between items */
     }
 
     nav li {
@@ -125,7 +126,7 @@ footer {
     }
 
     .cta-button {
-        width: 90%; /* Make button full-width on mobile */
+        width: 100%; /* Make button full-width on mobile */
         text-align: center;
         display: block;
         margin-top: 15px;
@@ -163,8 +164,8 @@ footer {
     }
 }
 
-h1, p, nav, section {
-    animation: fadeIn 1s ease-in-out;
+h1, p, section {
+    animation: fadeIn 0.8s ease-in-out;
 }
 html {
     scroll-behavior: smooth;
@@ -204,8 +205,10 @@ html {
     }
 
     nav ul li {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
+        display: block;
+        width: 100%; /* Make menu full width */
+        text-align: center;
+        padding: 10px 0; /* Space between links */
     }
 
     nav ul li a {
