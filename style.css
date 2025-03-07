@@ -175,3 +175,22 @@ html {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 20px; /* Reduce title size */
+    }
+
+    p {
+        font-size: 14px; /* Make text readable on small screens */
+        line-height: 1.6;
+    }
+
+    ul {
+        padding-left: 15px; /* Align bullet points properly */
+    }
+
+    .content-section {
+        padding: 20px; /* Add space for better readability */
+    }
+}
+
