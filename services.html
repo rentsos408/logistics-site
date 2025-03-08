@@ -53,7 +53,7 @@
         </div>
     </section>
     
-    <script>
+     <script>
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.remove('hidden');
         });
@@ -67,31 +67,21 @@
                 document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
+    </script>  <!-- ✅ Properly closed script tag here -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.hash) {
+                let target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }, 300); // Slight delay ensures it scrolls correctly
+                }
+            }
+        });
     </script>
-<script>
-    // Ensure smooth scrolling when users arrive from an external page
-    document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.hash) {
-            let target = document.querySelector(window.location.hash);
-            if (target) {
-                target.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // If there's a hash in the URL, scroll to the corresponding section smoothly
-        if (window.location.hash) {
-            let target = document.querySelector(window.location.hash);
-            if (target) {
-                setTimeout(() => {
-                    target.scrollIntoView({ behavior: "smooth" });
-                }, 500); // Small delay ensures the page has fully loaded
-            }
-        }
-    });
-</script>
+
 
 </body>
 </html>
