@@ -14,4 +14,62 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-900">RENTSOS408</h1>
             <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-gray
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Our Services</a>
+                <a href="more-info.html" class="text-gray-700 hover:text-blue-600">Who We Are</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Let's Talk</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden flex flex-col items-center justify-center text-white text-xl space-y-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="services.html" class="hover:text-gray-300">Our Services</a>
+        <a href="more-info.html" class="hover:text-gray-300">Who We Are</a>
+        <a href="#" class="hover:text-gray-300">Let's Talk</a>
+        <button id="close-menu" class="mt-4 text-gray-400 text-3xl">×</button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex flex-col items-center justify-center text-center bg-cover bg-center px-6" 
+        style="background-image: url('home4.webp'); background-position: center top;">
+        
+        <!-- Dark overlay to improve text readability -->
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- ✅ Darker overlay -->
+        
+        <!-- Content container -->
+        <div class="max-w-3xl relative">
+            <h2 class="text-white text-4xl md:text-5xl font-bold drop-shadow-2xl [text-shadow:2px_2px_6px_rgba(0,0,0,1)]">
+                Your Trusted Relocation and Logistics Partner
+            </h2>
+
+            <p class="mt-4 text-lg md:text-xl text-gray-200">
+                Seamless solutions for moving, furnishing, and settling in.
+            </p>
+
+            <div class="mt-6 space-x-4">
+                <a href="services.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg hover:bg-blue-700">
+                    Learn More
+                </a>
+                <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg text-lg hover:bg-gray-900">
+                    Get Started
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>
