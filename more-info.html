@@ -5,90 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Info - RENTSOS408</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#services">Our Services</a></li>
-            <li><a href="index.html#about">Who We Are</a></li>
-            <li><a href="index.html#contact">Let's Talk</a></li>
-        </ul>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">RENTSOS408</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Our Services</a>
+                <a href="more-info.html" class="text-gray-700 hover:text-blue-600">Who We Are</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Let's Talk</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">☰</button>
+        </div>
     </nav>
-
-    <header>
-        <h1 class="blue-title">Need More Info?</h1>
-        <h1 style="color: blue; font-size: 18px;">Find out how RENTSOS408 can help streamline your freight forwarding and shipping logistics</h1>
-    </header>
-
-    <div class="container">
-        <section>
-            <h2>Why Choose RENTSOS408?</h2>
-            <p>At RENTSOS408, we go beyond logistics—offering cost-effective, efficient, and secure shipping, relocation assistance, furniture sourcing, and real estate connections to help individuals and businesses move, settle, and thrive worldwide.</p>
-            <ul>
-                <li>✔ **Reliable Shipping** - We ensure timely and secure freight forwarding.</li>
-                <li>✔ **Custom Logistics Solutions** - Tailored services to fit your business needs.</li>
-                <li>✔ **Global Network** - Partnerships with major carriers and logistics providers.</li>
-                <li>✔ **Competitive Pricing** - Cost-effective rates with no hidden fees.</li>
-                <li>✔ **Customer Support** - Dedicated experts available to assist you.</li>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden flex flex-col items-center justify-center text-white text-xl space-y-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="services.html" class="hover:text-gray-300">Our Services</a>
+        <a href="more-info.html" class="hover:text-gray-300">Who We Are</a>
+        <a href="#" class="hover:text-gray-300">Let's Talk</a>
+        <button id="close-menu" class="mt-4 text-gray-400 text-3xl">×</button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center px-6" style="background-image: url('home4.webp'); background-position: center top;">
+        <div class="max-w-3xl text-white">
+            <h2 class="text-5xl md:text-6xl font-bold">Need More Info?</h2>
+            <p class="mt-4 text-lg md:text-xl">Find out how RENTSOS408 can help streamline your freight forwarding and shipping logistics.</p>
+        </div>
+    </section>
+    
+    <div class="container mx-auto px-6 py-10">
+        <section class="text-gray-800">
+            <h2 class="text-3xl font-bold">Why Choose RENTSOS408?</h2>
+            <p class="mt-4">At RENTSOS408, we go beyond logistics—offering cost-effective, efficient, and secure shipping, relocation assistance, furniture sourcing, and real estate connections.</p>
+            <ul class="list-disc pl-6 mt-4">
+                <li>✔ Reliable Shipping - Timely and secure freight forwarding.</li>
+                <li>✔ Custom Logistics Solutions - Tailored services to fit your business needs.</li>
+                <li>✔ Global Network - Partnerships with major carriers.</li>
+                <li>✔ Competitive Pricing - No hidden fees.</li>
+                <li>✔ Customer Support - Dedicated experts available to assist.</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Our Services</h2>
-            <p>We offer a comprehensive range of freight forwarding and logistics solutions:</p>
-            <ul>
-            <li>📦 <strong>Freight Forwarding Solutions</strong> – Seamless transportation of goods.</li>
-            <li>🚚 <strong>Logistics & Supply Chain Consulting</strong> – Optimize your shipping process.</li>
-            <li>🛃 <strong>Customs Clearance Assistance</strong> – Hassle-free clearance for international shipments.</li>
-            <li>🏠 <strong>Temporary Housing & Real Estate Connections</strong> – Assistance in finding short-term rentals and connecting with trusted local real estate agents for securing permanent homes.</li>
-            <li>🛳 <strong>Container Shipping</strong> – Full and partial container load solutions.</li>
-            <li>📑 <strong>Import/Export Documentation</strong> – Assistance with paperwork and legal compliance.</li>
-            <li>🏡 <strong>Furniture Sourcing & Home Setup</strong> – Helping you furnish and settle into your new home.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>How It Works</h2>
-            <p>Our streamlined process ensures smooth and hassle-free shipping:</p>
-            <ol>
-                <li><strong>Request a Quote</strong> - Contact us with your shipment details.</li>
-                <li><strong>Receive a Custom Plan</strong> - We create a tailored logistics solution.</li>
-                <li><strong>Shipping & Tracking</strong> - Monitor your shipment with real-time updates.</li>
-                <li><strong>Delivery Confirmation</strong> - Your cargo arrives safely at its destination.</li>
+        <section class="mt-10 text-gray-800">
+            <h2 class="text-3xl font-bold">How It Works</h2>
+            <ol class="list-decimal pl-6 mt-4">
+                <li><strong>Request a Quote</strong> - Contact us with shipment details.</li>
+                <li><strong>Receive a Custom Plan</strong> - Tailored logistics solution.</li>
+                <li><strong>Shipping & Tracking</strong> - Real-time updates.</li>
+                <li><strong>Delivery Confirmation</strong> - Cargo arrives safely.</li>
             </ol>
         </section>
 
-        <section>
-            <h2>Frequently Asked Questions (FAQ)</h2>
-            <details>
-                <summary>📌 How long does shipping take?</summary>
-                <p>Delivery time depends on the destination and shipping method. We offer express and standard options.</p>
+        <section class="mt-10 text-gray-800">
+            <h2 class="text-3xl font-bold">Frequently Asked Questions (FAQ)</h2>
+            <details class="mt-4">
+                <summary class="font-semibold cursor-pointer">📌 How long does shipping take?</summary>
+                <p class="mt-2">Delivery time depends on destination and method.</p>
             </details>
-            <details>
-                <summary>📌 Do you handle international shipments?</summary>
-                <p>Yes, we provide worldwide shipping services with customs clearance support.</p>
+            <details class="mt-4">
+                <summary class="font-semibold cursor-pointer">📌 Do you handle international shipments?</summary>
+                <p class="mt-2">Yes, we provide worldwide shipping services.</p>
             </details>
-            <details>
-                <summary>📌 What are the costs involved?</summary>
-                <p>Pricing depends on the shipment size, weight, and destination. Contact us for a customized quote.</p>
+            <details class="mt-4">
+                <summary class="font-semibold cursor-pointer">📌 What are the costs involved?</summary>
+                <p class="mt-2">Pricing varies. Contact us for a custom quote.</p>
             </details>
-            <details>
-                <summary>📌 How can I track my shipment?</summary>
-                <p>We provide real-time tracking updates so you can monitor your cargo at every stage.</p>
-            </details>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>Still have questions? Reach out to us today!</p>
-            <a href="mailto:info@rentsos408.com" class="cta-button">Email Us</a>
-            <a href="index.html#contact" class="cta-button">Go to Contact</a>
         </section>
     </div>
-
-    <footer>
+    
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
         <p>&copy; 2025 RENTSOS408. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
