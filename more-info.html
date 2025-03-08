@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -34,13 +35,14 @@
     <!-- Hero Section -->
     <section class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center px-6" 
     style="background-image: url('home4.webp'); background-position: center top;">
-    <div class="max-w-3xl text-white">
-        <h2 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Discover Effortless Logistics & Relocation</h2>
-        <p class="mt-4 text-lg md:text-xl">See how RENTSOS408 simplifies your global shipping and relocation needs.</p>
-    </div>
-</section>
+        <div class="max-w-3xl text-white">
+            <h2 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Discover Effortless Logistics & Relocation</h2>
+            <p class="mt-4 text-lg md:text-xl">See how RENTSOS408 simplifies your global shipping and relocation needs.</p>
+        </div>
+    </section>
     
-        <section class="text-gray-800 text-center py-10">
+    <!-- Why Choose Us Section -->
+    <section class="text-gray-800 text-center py-10">
         <h2 class="text-3xl font-bold">Why Choose RENTSOS408?</h2>
         <p class="mt-4">We go beyond logistics—offering cost-effective, efficient, and secure shipping, relocation assistance, and furniture sourcing.</p>
 
@@ -58,9 +60,9 @@
                 <p class="text-gray-600 mt-2">Strong partnerships with major carriers.</p>
             </div>
         </div>
-    </section>  <!-- ✅ Added missing closing tag here -->
+    </section>  
 
-    <!-- ✅ Now "How It Works" starts correctly outside -->
+    <!-- How It Works Section -->
     <section class="mt-10 text-gray-800 text-center">
         <h2 class="text-3xl font-bold">How It Works</h2>
         <div class="container mx-auto grid gap-8 md:grid-cols-4 px-6 mt-8">
@@ -83,50 +85,31 @@
         </div>
     </section>
 
-<section class="mt-10 text-gray-800 text-center">
-    <h2 class="text-3xl font-bold">How It Works</h2>
-    <div class="container mx-auto grid gap-8 md:grid-cols-4 px-6 mt-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-gray-900">📩 Request a Quote</h4>
-            <p class="text-gray-600 mt-2">Tell us your shipping details.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-gray-900">📋 Get a Custom Plan</h4>
-            <p class="text-gray-600 mt-2">We provide a tailored logistics solution.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-gray-900">🚚 Shipping & Tracking</h4>
-            <p class="text-gray-600 mt-2">Real-time updates on your cargo.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-gray-900">📦 Delivery Confirmation</h4>
-            <p class="text-gray-600 mt-2">Your shipment arrives safely.</p>
-        </div>
-    </div>
-</section>
-
-
-        <section class="mt-10 text-gray-800">
-            <h2 class="text-3xl font-bold">Frequently Asked Questions (FAQ)</h2>
-            <details class="mt-4">
+    <!-- FAQ Section -->
+    <section class="mt-10 text-gray-800">
+        <h2 class="text-3xl font-bold text-center">Frequently Asked Questions (FAQ)</h2>
+        <div class="max-w-2xl mx-auto mt-6">
+            <details class="mt-4 bg-gray-100 p-4 rounded-lg shadow-md">
                 <summary class="font-semibold cursor-pointer">📌 How long does shipping take?</summary>
-                <p class="mt-2">Delivery time depends on destination and method.</p>
+                <p class="mt-2 text-gray-700">Delivery time depends on the destination and shipping method.</p>
             </details>
-            <details class="mt-4">
+            <details class="mt-4 bg-gray-100 p-4 rounded-lg shadow-md">
                 <summary class="font-semibold cursor-pointer">📌 Do you handle international shipments?</summary>
-                <p class="mt-2">Yes, we provide worldwide shipping services.</p>
+                <p class="mt-2 text-gray-700">Yes, we provide worldwide shipping services.</p>
             </details>
-            <details class="mt-4">
+            <details class="mt-4 bg-gray-100 p-4 rounded-lg shadow-md">
                 <summary class="font-semibold cursor-pointer">📌 What are the costs involved?</summary>
-                <p class="mt-2">Pricing varies. Contact us for a custom quote.</p>
+                <p class="mt-2 text-gray-700">Pricing varies. Contact us for a custom quote.</p>
             </details>
-        </section>
-    </div>
+        </div>
+    </section>
     
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-4 mt-10">
         <p>&copy; 2025 RENTSOS408. All rights reserved.</p>
     </footer>
     
+    <!-- Mobile Menu Script -->
     <script>
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.remove('hidden');
@@ -135,5 +118,6 @@
             document.getElementById('mobile-menu').classList.add('hidden');
         });
     </script>
+
 </body>
 </html>
