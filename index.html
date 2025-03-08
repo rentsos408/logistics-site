@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RENTSOS408</title>
-    <script src="https://cdn.tailwindcss.com"></script> <!-- ✅ Corrected Tailwind inclusion -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- ✅ Tailwind CDN -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
@@ -33,34 +33,63 @@
     </div>
     
     <!-- Hero Section -->
-<section class="relative h-screen flex flex-col items-start justify-center text-left bg-cover bg-left md:bg-center bg-no-repeat bg-[length:150%] md:bg-[length:100%] px-6"
-    style="background-image: url('home4.webp');">
+    <section class="relative h-screen flex flex-col items-start justify-center text-left bg-cover bg-left md:bg-center bg-no-repeat bg-[length:150%] md:bg-[length:100%] px-6"
+        style="background-image: url('home4.webp');">
         
-    <!-- Dark overlay to improve text readability -->
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- ✅ Darker overlay -->
-    
-    <!-- Content container -->
-    <div class="max-w-3xl relative ml-4 md:ml-0">
-        <h2 class="text-white text-3xl md:text-4xl font-bold drop-shadow-2xl [text-shadow:2px_2px_6px_rgba(0,0,0,1)]">
-            Trusted Relocation & Logistics Solutions
-        </h2>
+        <!-- Dark overlay to improve text readability -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
 
-        <p class="mt-4 text-lg md:text-xl text-gray-200">
-            Seamless solutions for moving, furnishing, and settling in.
-        </p>
+        <!-- Content container -->
+        <div class="max-w-3xl relative ml-4 md:ml-0">
+            <h2 class="text-white text-4xl md:text-5xl font-bold drop-shadow-2xl [text-shadow:2px_2px_6px_rgba(0,0,0,1)]">
+                Trusted Relocation & Logistics Solutions
+            </h2>
 
-        <div class="mt-6 space-x-4">
-            <a href="services.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg hover:bg-blue-700">
-                Learn More
-            </a>
-            <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg text-lg hover:bg-gray-900">
-                Get Started
-            </a>
+            <p class="mt-4 text-lg md:text-xl text-gray-200">
+                Effortless global moving, furnishing, and settling in.
+            </p>
+
+            <div class="mt-6 space-x-4">
+                <a href="services.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg hover:bg-blue-700">
+                    Learn More
+                </a>
+                <a href="contact.html" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg text-lg hover:bg-gray-900">
+                    Get Started
+                </a>
+            </div>
         </div>
-    </div>
 
-</section>
+    </section>
 
+    <!-- 🔹 Short "Our Services" Section -->
+    <section class="py-16 bg-white text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Our Services</h3>
+        <p class="text-lg text-gray-600 mt-2">Seamless solutions tailored to your relocation needs.</p>
+
+        <div class="container mx-auto mt-8 grid gap-8 md:grid-cols-3 px-6">
+            <!-- Service 1 -->
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h4 class="text-xl font-semibold text-gray-900">Luxury Relocation</h4>
+                <p class="text-gray-600 mt-2">Personalized moving services for high-net-worth individuals.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h4 class="text-xl font-semibold text-gray-900">Furniture & Setup</h4>
+                <p class="text-gray-600 mt-2">Complete furnishing & interior setup for a stress-free move.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h4 class="text-xl font-semibold text-gray-900">Global Logistics</h4>
+                <p class="text-gray-600 mt-2">Efficient shipping & logistics management for international moves.</p>
+            </div>
+        </div>
+
+        <a href="services.html" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg hover:bg-blue-700">
+            View All Services
+        </a>
+    </section>
 
     <!-- JavaScript for Mobile Menu -->
     <script>
