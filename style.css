@@ -1,50 +1,22 @@
 /* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background: url('https://raw.githubusercontent.com/rentsos408/logistics-site/main/home4.webp') no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll; /* Fix for mobile */
-    color: #000000; /* Softer off-white for better readability */
+    background-color: #f8f9fa;
+    color: #000000;
     text-align: center;
-    padding: 20px;
     margin: 0;
 }
 
-/* Header Styling */
-header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.service {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-h1 {
-    color: #007bff; /* Blue color for "Welcome to RENTSOS408" */
-    font-size: 2.5em;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-
 /* Navigation Bar */
 nav {
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    position: fixed; /* Keep menu at the top */
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Keeps it above other content */
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 nav ul {
@@ -52,180 +24,86 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers the menu items */
-    gap: 20px; /* Adds spacing */
+    justify-content: center;
+    gap: 20px;
 }
 
 nav li {
-   display: inline-block;
+    display: inline-block;
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: background 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.3);
+    color: #007bff;
 }
 
-
-/* Container */
-.container {
-    background: rgba(255, 255, 255, 0.6); /* White background with slight transparency */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px auto; /* Center alignment */
-    max-width: 90%;
-}
-
-
-/* Sections */
+/* Hero Section */
 section {
-    margin: 60px 0; /* More spacing so sections are not hidden under the nav */
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.section-content {
-    max-width: 70%;
-    margin: auto; /* Centers the text block */
-}
-
-/* Footer Styling */
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-@media (max-width: 768px) {
-    .container {
-        width: 95%; /* Increase width to better fit small screens */
-    }
-
-    h1 {
-        font-size: 24px; /* Reduce heading size */
-    }
-    
-    p {
-        font-size: 16px; /* Adjust paragraph size for readability */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px; /* Add spacing between items */
-    }
-
-    nav li {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .cta-button {
-        width: 100%; /* Make button full-width on mobile */
-        text-align: center;
-        display: block;
-        margin-top: 15px;
-    }
+    min-height: 90vh;
+    padding: 20px;
 }
 
+/* Headings */
+h1, h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
 
+p {
+    font-size: 1.2em;
+}
+
+/* Call-to-Action Buttons */
 .cta-button {
     display: inline-block;
-    background: #ff6600;
+    background: #007bff;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 24px;
     font-size: 18px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease-in-out, transform 0.2s;
-    margin-top: 20px; /* Adds space above the button */
-    margin-bottom: 20px; /* Adds space below the button */
 }
-
 
 .cta-button:hover {
-    background: #cc5500;
-    transform: scale(1.05); /* Slight zoom effect */
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    background: #0056b3;
+    transform: scale(1.05);
 }
 
-h1, p, section {
-    animation: fadeIn 0.8s ease-in-out;
-}
-html {
-    scroll-behavior: smooth;
-}
-.blue-title {
-    color: #007bff !important; /* Forces the blue color */
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-    h1, h2 {
-        font-size: 20px; /* Reduce title size */
-    }
-
-    p {
-        font-size: 14px; /* Make text readable on small screens */
-        line-height: 1.6;
-    }
-
-    ul {
-        padding-left: 15px; /* Align bullet points properly */
-    }
-
-    .content-section {
-        padding: 20px; /* Add space for better readability */
-    }
-}
-
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
-        display: flex;
-        flex-direction: column; /* Stack menu items vertically */
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.8); /* Darker background for visibility */
+        flex-direction: column;
+        align-items: center;
         padding: 10px 0;
     }
 
-    nav ul li {
-        display: block;
-        width: 100%; /* Make menu full width */
-        text-align: center;
-        padding: 10px 0; /* Space between links */
+    h1 {
+        font-size: 28px;
     }
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
+    p {
+        font-size: 16px;
     }
-}
-@media screen and (max-width: 768px) {
-    .overlay {
-        background-color: rgba(255, 255, 255, 0.9); /* Increases opacity */
-        padding: 20px;
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        display: block;
     }
 }
