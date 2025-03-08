@@ -30,11 +30,11 @@
         <button id="close-menu" class="mt-4 text-gray-400 text-3xl">×</button>
     </div> 
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center px-6" 
-        style="background-image: url('home4.webp'); background-position: center top;">
+    <section class="h-[60vh] flex flex-col items-center justify-center text-center bg-cover bg-center px-6" 
+        style="background-image: url('new-background.webp'); background-position: center top;">
         <div class="max-w-3xl text-white">
-            <h2 class="text-5xl md:text-6xl font-bold">Our Premium Services</h2>
-            <p class="mt-4 text-lg md:text-xl">Comprehensive logistics and relocation solutions tailored for you.</p>
+            <h2 class="text-4xl md:text-5xl font-bold [text-shadow:2px_2px_6px_rgba(0,0,0,1)]">Our Premium Services</h2>
+            <p class="mt-4 text-lg md:text-xl text-gray-200">Comprehensive logistics and relocation solutions tailored for you.</p>
             <div class="mt-6 space-x-4">
                 <a href="more-info.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg">Learn More</a>
                 <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg text-lg">Get Started</a>
@@ -53,7 +53,7 @@
         </div>
     </section>
     
-     <script>
+    <script>
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.remove('hidden');
         });
@@ -67,21 +67,6 @@
                 document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
-    </script>  <!-- ✅ Properly closed script tag here -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.location.hash) {
-                let target = document.querySelector(window.location.hash);
-                if (target) {
-                    setTimeout(() => {
-                        target.scrollIntoView({ behavior: "smooth" });
-                    }, 300); // Slight delay ensures it scrolls correctly
-                }
-            }
-        });
     </script>
-
-
 </body>
 </html>
