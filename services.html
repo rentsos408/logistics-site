@@ -1,66 +1,117 @@
-<!-- Services Section -->
-<div class="container mx-auto px-6 py-16">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - RENTSOS408</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
 
-    <!-- Service 1: Global Logistics -->
-    <section class="bg-white rounded-lg shadow-lg p-10 text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Global Logistics</h2>
-        <p class="mt-4 text-lg text-gray-700">Efficient shipping & logistics management for international moves.</p>
-        <div class="mt-6 flex justify-center">
-            <img src="ship.webp" alt="Global Logistics" class="w-72 h-auto mx-auto rounded-lg shadow-md">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">RENTSOS408</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Our Services</a>
+                <a href="more-info.html" class="text-gray-700 hover:text-blue-600">Who We Are</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Let's Talk</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">☰</button>
         </div>
-        <div class="mt-6">
-            <ul class="mt-4 space-y-2 text-lg text-gray-700">
-                <li>✅ <strong>Freight Forwarding</strong> – Secure and efficient transport via sea, air, and land to ensure your goods arrive safely.</li>
-                <li>✅ <strong>Customs Clearance</strong> – Assistance with all necessary import/export documentation to prevent delays.</li>
-                <li>✅ <strong>Cargo Consolidation & Warehousing</strong> – Store, combine, and ship items from multiple suppliers to reduce costs.</li>
-                <li>✅ <strong>Shipment Tracking & Risk Management</strong> – Real-time updates and proactive handling of any unforeseen issues.</li>
-            </ul>
-            <a href="global-logistics.html" class="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700">Learn More</a>
-            <a href="contact.html" class="ml-4 px-6 py-3 bg-gray-800 text-white rounded-full shadow-lg text-lg hover:bg-gray-900">Get Started</a>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden flex flex-col items-center justify-center text-white text-xl space-y-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="services.html" class="hover:text-gray-300">Our Services</a>
+        <a href="more-info.html" class="hover:text-gray-300">Who We Are</a>
+        <a href="contact.html" class="hover:text-gray-300">Let's Talk</a>
+        <button id="close-menu" class="mt-4 text-gray-400 text-3xl">×</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-64 flex flex-col items-center justify-center text-center bg-cover bg-center px-6"
+        style="background-image: url('services-banner.webp');">
+        
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content container -->
+        <div class="relative text-white">
+            <h2 class="text-4xl md:text-5xl font-bold drop-shadow-lg">
+                Our Services
+            </h2>
+            <p class="mt-2 text-lg">Comprehensive solutions for logistics, relocation, and procurement.</p>
         </div>
     </section>
 
-    <!-- Separator -->
-    <div class="border-t border-gray-200 my-24"></div>
+    <!-- Services Section -->
+    <div class="container mx-auto px-6 py-16">
 
-    <!-- Service 2: Relocation -->
-    <section class="bg-white rounded-lg shadow-lg p-10 text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Relocation</h2>
-        <p class="mt-4 text-lg text-gray-700">Personalized moving services.</p>
-        <div class="mt-6">
-            <ul class="mt-4 space-y-2 text-lg text-gray-700">
-                <li>✅ <strong>International & Domestic Moves</strong> – Seamless relocation solutions for individuals, families, and businesses.</li>
-                <li>✅ <strong>End-to-End Moving Assistance</strong> – Packing, loading, shipping, customs clearance, and final delivery.</li>
-                <li>✅ <strong>Customized Moving Plans</strong> – Tailored services based on your budget, timeline, and special requirements.</li>
-                <li>✅ <strong>Temporary Storage Solutions</strong> – Secure warehousing options before final delivery.</li>
-                <li>✅ <strong>Pet & Vehicle Relocation</strong> – Safe and compliant transportation of pets and personal vehicles.</li>
-            </ul>
-            <a href="relocation.html" class="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700">Learn More</a>
-            <a href="contact.html" class="ml-4 px-6 py-3 bg-gray-800 text-white rounded-full shadow-lg text-lg hover:bg-gray-900">Get Started</a>
-        </div>
-    </section>
+        <!-- Service 1: Global Logistics -->
+        <section id="global-logistics" class="bg-white rounded-lg shadow-lg p-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Global Logistics</h2>
+            <p class="mt-4 text-lg text-gray-700">Efficient shipping & logistics management for international moves.</p>
+            <div class="mt-6 flex justify-center">
+                <img src="ship.webp" alt="Global Logistics" class="w-72 h-auto mx-auto rounded-lg shadow-md">
+            </div>
+            <div class="mt-6">
+                <ul class="mt-4 space-y-2 text-lg text-gray-700 text-left">
+                    <li>✅ <strong>Freight Forwarding</strong> – Secure and efficient transport via sea, air, and land.</li>
+                    <li>✅ <strong>Customs Clearance</strong> – Assistance with all necessary documentation.</li>
+                    <li>✅ <strong>Cargo Consolidation & Warehousing</strong> – Store and combine shipments to reduce costs.</li>
+                    <li>✅ <strong>Shipment Tracking & Risk Management</strong> – Real-time updates and proactive handling.</li>
+                </ul>
+                <a href="global-logistics.html" class="px-6 py-3 mt-6 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700 inline-block">Learn More</a>
+            </div>
+        </section>
 
-    <!-- Separator -->
-    <div class="border-t border-gray-200 my-24"></div>
+        <!-- Separator -->
+        <div class="border-t border-gray-200 my-16"></div>
 
-    <!-- Service 3: Procurement & Sourcing -->
-    <section class="bg-white rounded-lg shadow-lg p-10 text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Procurement & Sourcing</h2>
-        <p class="mt-4 text-lg text-gray-700">Expert assistance in sourcing furniture, commercial equipment, and supplier inspections.</p>
-        <div class="mt-6 flex justify-center">
-            <img src="furniture.webp" alt="Procurement & Sourcing" class="w-72 h-auto mx-auto rounded-lg shadow-md">
-        </div>
-        <div class="mt-6">
-            <ul class="mt-4 space-y-2 text-lg text-gray-700">
-                <li>✅ <strong>Furniture Sourcing</strong> – Help in finding high-quality home, office, and commercial furniture from trusted suppliers.</li>
-                <li>✅ <strong>Custom & Bespoke Furniture</strong> – Assist with designing and sourcing tailor-made furniture to fit your needs.</li>
-                <li>✅ <strong>Commercial Equipment Procurement</strong> – Support in finding and purchasing business-specific equipment.</li>
-                <li>✅ <strong>Supplier Inspections & Quality Control</strong> – Facilitate inspections to verify product quality before shipment.</li>
-                <li>✅ <strong>Product Testing & Compliance</strong> – Ensure items meet safety and durability standards before purchase.</li>
-                <li>✅ <strong>End-to-End Logistics Support</strong> – Assist with secure packing, warehousing, and shipping coordination.</li>
-            </ul>
-            <a href="furniture-sourcing.html" class="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700">Learn More</a>
-            <a href="contact.html" class="ml-4 px-6 py-3 bg-gray-800 text-white rounded-full shadow-lg text-lg hover:bg-gray-900">Get Started</a>
-        </div>
-    </section> <!-- Correctly closing the Procurement section -->
-</div>
+        <!-- Service 2: Relocation -->
+        <section id="relocation" class="bg-white rounded-lg shadow-lg p-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Luxury Relocation</h2>
+            <p class="mt-4 text-lg text-gray-700">Personalized moving services for high-net-worth individuals.</p>
+            <div class="mt-6">
+                <ul class="mt-4 space-y-2 text-lg text-gray-700 text-left">
+                    <li>✅ <strong>International & Domestic Moves</strong> – Relocation solutions for families and businesses.</li>
+                    <li>✅ <strong>End-to-End Assistance</strong> – Packing, shipping, customs clearance, and final delivery.</li>
+                    <li>✅ <strong>Customized Moving Plans</strong> – Tailored services to fit your budget and timeline.</li>
+                    <li>✅ <strong>Pet & Vehicle Relocation</strong> – Secure transport of pets and vehicles.</li>
+                </ul>
+                <a href="relocation.html" class="px-6 py-3 mt-6 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700 inline-block">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <div class="border-t border-gray-200 my-16"></div>
+
+        <!-- Service 3: Procurement & Sourcing -->
+        <section id="procurement" class="bg-white rounded-lg shadow-lg p-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Procurement & Sourcing</h2>
+            <p class="mt-4 text-lg text-gray-700">Expert assistance in sourcing furniture, commercial equipment, and supplier inspections.</p>
+            <div class="mt-6 flex justify-center">
+                <img src="furniture.webp" alt="Procurement & Sourcing" class="w-72 h-auto mx-auto rounded-lg shadow-md">
+            </div>
+            <div class="mt-6">
+                <ul class="mt-4 space-y-2 text-lg text-gray-700 text-left">
+                    <li>✅ <strong>Furniture Sourcing</strong> – Find high-quality home, office, and commercial furniture.</li>
+                    <li>✅ <strong>Custom & Bespoke Furniture</strong> – Get tailor-made furniture to fit your needs.</li>
+                    <li>✅ <strong>Commercial Equipment Procurement</strong> – Find and purchase business-specific equipment.</li>
+                    <li>✅ <strong>Supplier Inspections</strong> – Verify product quality before shipment.</li>
+                </ul>
+                <a href="procurement.html" class="px-6 py-3 mt-6 bg-blue-600 text-white rounded-full shadow-lg text-lg hover:bg-blue-700 inline-block">Learn More</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gray-900 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 RENTSOS408. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
