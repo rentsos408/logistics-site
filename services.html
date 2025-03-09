@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RENTSOS408 - Services</title>
+    <title>More Info - RENTSOS408</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -20,7 +21,8 @@
             </div>
             <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">☰</button>
         </div>
-    </nav>  
+    </nav>
+    
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden flex flex-col items-center justify-center text-white text-xl space-y-6">
         <a href="index.html" class="hover:text-gray-300">Home</a>
@@ -28,44 +30,24 @@
         <a href="more-info.html" class="hover:text-gray-300">Who We Are</a>
         <a href="#" class="hover:text-gray-300">Let's Talk</a>
         <button id="close-menu" class="mt-4 text-gray-400 text-3xl">×</button>
-    </div> 
+    </div>
+    
     <!-- Hero Section -->
     <section class="h-[60vh] flex flex-col items-center justify-center text-center bg-cover bg-center px-6" 
-        style="background-image: url('new-background.webp'); background-position: center top;">
+    style="background-image: url('new-background.webp'); background-position: center top;">
         <div class="max-w-3xl text-white">
-            <h2 class="text-4xl md:text-5xl font-bold [text-shadow:2px_2px_6px_rgba(0,0,0,1)]">Our Premium Services</h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-200">Comprehensive logistics and relocation solutions tailored for you.</p>
-            <div class="mt-6 space-x-4">
-                <a href="more-info.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg text-lg">Learn More</a>
-                <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg text-lg">Get Started</a>
-            </div>
-        </div>
-    </section>
-    <!-- Who We Are Section -->
-    <section id="who-we-are" class="py-20 px-6 bg-gray-200 text-gray-900 text-center">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-bold">Who We Are</h2>
-            <p class="mt-4 text-lg">RENTSOS408 is a global consulting firm specializing in <strong>relocation</strong>, sourcing, procurement, and <strong>logistics</strong> solutions for individuals and businesses. We assist clients in securing and consolidating goods, arranging shipments, and navigating international trade logistics.</p>
-            <p class="mt-4 text-lg">Beyond logistics, we also help clients during their relocation, sourcing furniture for their new homes, offering assistance with opening bank accounts, securing temporary housing, décor, and essential household items to create a comfortable living space.</p>
-            <p class="mt-4 text-lg"><strong>Our services are particularly valuable for retirees</strong> looking to transition smoothly to a new country.</p>
-            <p class="mt-4 text-lg">As a registered Maersk account holder, we offer direct <strong>shipping</strong> coordination without relying on traditional freight forwarders, allowing for cost-effective and transparent logistics.</p>
-            <p class="mt-4 text-lg">With services available in <strong>English, Spanish, Italian, and French</strong>, RENTOS408 helps clients streamline their supply chain while ensuring efficiency, competitive pricing, and personalized guidance throughout the process.</p>
+            <h2 class="text-5xl md:text-6xl font-bold drop-shadow-lg">Discover Effortless Logistics & Relocation</h2>
+            <p class="mt-4 text-lg md:text-xl">See how RENTSOS408 simplifies your global shipping and relocation needs.</p>
         </div>
     </section>
     
+    <!-- JavaScript for Mobile Menu -->
     <script>
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.remove('hidden');
         });
         document.getElementById('close-menu').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.add('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
         });
     </script>
 </body>
