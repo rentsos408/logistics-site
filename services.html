@@ -76,5 +76,19 @@
             });
         });
     </script>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.hash) {
+            let target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
